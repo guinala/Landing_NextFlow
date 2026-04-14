@@ -1,0 +1,41 @@
+.topbar{
+    display: flex;
+    max-width: 1440px;
+    padding: 0 24px;
+    flex-direction: row;
+    align-items: center;
+
+    &__nav{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__logo{
+        margin-right: 8px;
+    }
+
+    &__actions{
+        display: inline-flex;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    &__action
+    {
+        display: flex;
+        padding: 8px 16px 8px 17px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+    }
+
+    &__actions-white{
+        
+    }
+
+    &__actions-black{
+        background-color: black;
+        color: white;
+    }
+}
