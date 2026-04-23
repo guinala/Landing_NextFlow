@@ -1,3 +1,21 @@
 body {
     font-family: var(--font-family);
+    color: var(--color-text-primary);
+    background-color: var(--color-background);
+}
+
+h1 {
+    font-size: var(--text-h1);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -2px;
+    color: var(--color-text-primary);
+    margin: 0;
+}
+
+p {
+    font-size: var(--text-body-lg);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin: 0;
 }

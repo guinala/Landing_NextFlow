@@ -1,0 +1,31 @@
+.event-bar {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    padding: var(--space-xs) var(--space-md);
+    border: 1px solid var(--color-neutral-200);
+    border-radius: var(--radius-full);
+    background-color: var(--color-background);
+    cursor: pointer;
+    
+    &__badge {
+        background-color: var(--color-text-primary);
+        color: var(--color-text-on-primary);
+        font-size: var(--text-caption);
+        font-weight: var(--font-semibold);
+        padding: 2px 8px;
+        border-radius: var(--radius-full);
+        line-height: 18px;
+    }
+
+    &__text {
+        font-size: var(--text-body-sm);
+        color: var(--color-text-secondary);
+        font-weight: var(--font-medium);
+    }
+
+    &__arrow {
+        font-size: var(--text-body-sm);
+        color: var(--color-text-secondary);
+    }
+}
