@@ -1,0 +1,15 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 52px;
+
+    span {
+        color:          #1D1E20;
+        text-align:     center;
+        font-size:      var(--text-body);
+        font-weight:    var(--font-medium);
+        line-height:    24px;
+        letter-spacing: -0.2px;
+    }
+}

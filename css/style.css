@@ -1,8 +1,43 @@
+body {
+  font-family: var(--font-family);
+}
+
+button {
+  border: 1px solid #CDD3DB;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 52px;
+}
+nav span {
+  color: #1D1E20;
+  text-align: center;
+  font-size: var(--text-body);
+  font-weight: var(--font-medium);
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+
 .topbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1440px;
   padding: 0 24px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -13,16 +48,21 @@
           align-items: center;
 }
 .topbar__nav {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 8px;
+  gap: 75px;
 }
 .topbar__logo {
-  margin-right: 8px;
+  color: var(--color-text-primary);
+  font-size: var(--text-h5);
+  font-weight: var(--font-semibold);
 }
 .topbar__actions {
   display: -webkit-inline-box;
@@ -34,17 +74,11 @@
   gap: 12px;
 }
 .topbar__action {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding: 8px 16px 8px 17px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   border-radius: 12px;
+}
+.topbar__actions-white {
+  background-color: white;
 }
 .topbar__actions-black {
   background-color: black;
@@ -62,5 +96,50 @@
 }
 
 :root {
-  --background: #fff;
+  --color-background: #FFFFFF;
+  --color-background-subtle: #F2F4F6;
+  --color-primary: #1E3A5F;
+  --color-primary-light: #2A4F7F;
+  --color-primary-dark: #152C48;
+  --color-accent: #2E86C1;
+  --color-accent-light: #5DA9D5;
+  --color-accent-dark: #1A6A9E;
+  --color-text-primary: #1A1A2E;
+  --color-text-secondary: #4A4A5A;
+  --color-text-on-primary: #FFFFFF;
+  --color-text-on-accent: #FFFFFF;
+  --color-neutral: #F2F4F6;
+  --color-neutral-200: #D8DCE2;
+  --color-neutral-300: #B0B7C0;
+  --color-success: #27AE60;
+  --color-warning: #F39C12;
+  --color-error: #E74C3C;
+  --space-2xs: 2px;
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 96px;
+  --space-5xl: 128px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+  --font-family: 'Inter', sans-serif;
+  --text-h1: 64px;
+  --text-h2: 48px;
+  --text-h3: 36px;
+  --text-h4: 28px;
+  --text-h5: 22px;
+  --text-h6: 18px;
+  --text-body-lg: 18px;
+  --text-body: 16px;
+  --text-body-sm: 14px;
+  --text-caption: 12px;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
 }

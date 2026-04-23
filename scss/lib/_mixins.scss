@@ -1,7 +1,10 @@
-@mixin center-content($padding){
-    padding-left: calc((100%))
+@mixin center-content($max-width) {
+    padding-left:  calc((100% - #{$max-width}) / 2);
+    padding-right: calc((100% - #{$max-width}) / 2);
 }
 
-@mixin breakpoint($category){
-
+@mixin breakpoint($min-width) {
+    @media (min-width: #{$min-width}) {
+        @content;
+    }
 }
