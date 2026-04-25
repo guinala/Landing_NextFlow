@@ -1,0 +1,22 @@
+@use "../lib" as *;
+
+.product-video {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: var(--space-4xl);
+    @include center-content(900px);
+}
+
+.product-video::before {
+    content: "";
+    position: absolute;
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgb(109, 109, 109) 1px, transparent 1px), linear-gradient(to bottom, black 1px, transparent 1px);
+    background-size: 60px 30px;
+    box-shadow: inset 0 0 50px 60px white; //efecto viñeta
+}

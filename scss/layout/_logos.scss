@@ -1,0 +1,9 @@
+@use "../lib" as *;
+
+.product-logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: var(--space-4xl);
+    @include center-content(900px);
+}

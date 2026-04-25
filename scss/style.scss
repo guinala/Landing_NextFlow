@@ -1,17 +1,18 @@
+@use "variables";
+@use "lib";
 @use "base";
 @use "layout";
-@use "lib";
 @use "components";
 @use "utilities";
-@use "variables";
 
 
-.background { //deberia ser con before en la clase del video
-    position: absolute; //No hace falta
-    z-index: 100;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(to right, black 1px, transparent 1px), linear-gradient(to bottom, black 1px, transparent 1px);
-    background-size: 46px 20px;
-    box-shadow: inset 0 0 50px 60px white; //efecto viñeta
-}
+
+// .background { //deberia ser con before en la clase del video
+//     position: absolute; //No hace falta
+//     z-index: 100;
+//     width: 100%;
+//     height: 100%;
+//     background-image: linear-gradient(to right, black 1px, transparent 1px), linear-gradient(to bottom, black 1px, transparent 1px);
+//     background-size: 46px 20px;
+//     box-shadow: inset 0 0 50px 60px white; //efecto viñeta
+// }
