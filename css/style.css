@@ -248,6 +248,7 @@ nav span {
 }
 
 .product-logos {
+  margin-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -261,6 +262,16 @@ nav span {
   padding-top: var(--space-4xl);
   padding-left: calc((100% - 900px) / 2);
   padding-right: calc((100% - 900px) / 2);
+}
+
+.description-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: var(--space-lg);
 }
 
 .event-bar {
