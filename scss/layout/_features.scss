@@ -1,0 +1,92 @@
+@use "../lib" as *;
+
+.feature-section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2xl);
+    padding-top: var(--space-5xl);
+    padding-left: var(--space-4xl);
+    padding-right: var(--space-4xl);
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-md);
+        max-width: 520px;
+
+        > p {
+            padding-left: calc(56px + var(--space-sm));
+        }
+    }
+
+    &__header {
+        display: flex;
+        align-items: flex-start;
+        gap: var(--space-sm);
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 27px;
+            top: 56px;
+            width: 1px;
+            height: 60px;
+            background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.15), transparent);
+        }
+
+        img {
+            width: 56px;
+            height: 56px;
+        }
+    }
+
+    &__features {
+        display: flex;
+        gap: var(--space-lg);
+        padding: var(--space-2xl);
+    }
+
+    &__card {
+        border: 1px solid var(--color-neutral-200);
+        border-radius: var(--radius-lg);
+    }
+
+    &__feature {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-sm);
+        flex: 1;
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+
+        h4 {
+            font-size: var(--text-body-lg);
+            font-weight: var(--font-semibold);
+            margin: 0;
+        }
+
+        p {
+            font-size: var(--text-body-sm);
+        }
+    }
+
+    &__feature:not(:first-child) {
+        h4, p {
+            color: var(--color-neutral-300);
+        }
+    }
+
+
+    &__demo {
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+}

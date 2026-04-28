@@ -7,4 +7,9 @@
     align-items: center;
     padding-top: var(--space-4xl);
     @include center-content(900px);
+
+    img {
+        max-width: 200%;
+        height: auto;
+    }
 }

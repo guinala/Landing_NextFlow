@@ -1,10 +1,6 @@
-button {
-    cursor: pointer;
-    font-family: var(--font-family);
-}
-
 .btn {
     display: inline-flex;
+    cursor: pointer;
     align-items: center;
     justify-content: center;
     padding: 8px 16px;
