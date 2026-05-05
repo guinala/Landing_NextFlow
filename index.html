@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexFlow</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -11,12 +12,15 @@
 <body>
     <div class="topbar">
         <div class="topbar__nav">
-            <p class="topbar__logo">NexFlow</p>
+            <a class="topbar__logo" href="#">NexFlow</a>
             <nav class="nav">
                 <a class="nav__item" href="#">Integrations</a>
                 <a class="nav__item" href="#">Changelog</a>
                 <a class="nav__item" href="#">Help</a>
-                <a class="nav__item" href="#">Careers</a>
+                <a class="nav__item nav__item--careers" href="#">
+                    Careers
+                    <span class="nav__counter">3</span>
+                </a>
                 <a class="nav__item" href="#">Pricing</a>
             </nav>
         </div>
@@ -26,23 +30,23 @@
         </div>
     </div>
 
-    <div class="hero">
-        <div class="hero__content">
+    <main>
+        <header class="hero">
             <div class="event-bar">
                 <span class="event-bar__badge">Aug 4th</span>
                 <span class="event-bar__text">In SF? Join our in-person onboardings</span>
                 <span class="event-bar__arrow">›</span>
             </div>
-            <h1 class="hero__heading">Automate your <br>dev workflows. Finally.</h1>
-            <p class="hero__subtext">Connect GitHub, Jira, Slack and Notion in minutes.<br>No code required.</p>
-            <div class="hero__actions">
-            <button class="btn btn--primary">Start building for free</button>
-            <button class="btn btn--secondary">See how it works</button>
+            <div class="hero__content">
+                <h1 class="hero__heading">Automate your dev workflows. Finally.</h1>
+                <p class="hero__subtext">Connect GitHub, Jira, Slack and Notion in minutes.<br>No code required.</p>
+                <div class="hero__actions">
+                <button class="btn btn--primary btn--lg">Start building for free</button>
+                <button class="btn btn--secondary btn--lg">See how it works</button>
+                </div>
             </div>
-        </div>
-    </div>
+        </header>
 
-    <main>
         <section class="product-video">
             <img src="./img/video.png" alt="NexFlow video" />
             <button class="product-video__play">
@@ -53,51 +57,55 @@
             </button>
         </section>
 
-        <section class="product-logos">
+        <section class="product-logos" aria-label="Empresas que usan NexFlow">
             <div class="product-logos__grid">
-                <img src="./img/cocacola.png" alt="Coca-Cola" />
-                <img src="./img/openAI.png" alt="DOPT" />
-                <img src="./img/pallet.png" alt="OpenAI" />
-                <img src="./img/causal.png" alt="HyperLine" />
-                <img src="./img/plain.png" alt="HyperLine" />
-                <img src="./img/passionFroot.png" alt="HyperLine" />
-                <img src="./img/dopt.png" alt="HyperLine" />
-                <img src="./img/hyperline.png" alt="HyperLine" />
-                <img src="./img/onDeck.png" alt="HyperLine" />
-                <img src="./img/bravado.png" alt="HyperLine" />
-                <img src="./img/beacons.png" alt="HyperLine" />
+                <div class="product-logos__row">
+                    <img src="./img/cocacola.png" alt="Coca-Cola" />
+                    <img src="./img/openAI.png" alt="OpenAI" />
+                    <img src="./img/pallet.png" alt="Pallet" />
+                    <img src="./img/causal.png" alt="Causal" />
+                    <img src="./img/plain.png" alt="Plain" />
+                    <img src="./img/passionFroot.png" alt="Passionfroot" />
+                </div>
+                <div class="product-logos__row">
+                    <img src="./img/dopt.png" alt="Dopt" />
+                    <img src="./img/hyperline.png" alt="Hyperline" />
+                    <img src="./img/onDeck.png" alt="On Deck" />
+                    <img src="./img/bravado.png" alt="Bravado" />
+                    <img src="./img/beacons.png" alt="Beacons" />
+                </div>
             </div>
         </section>
 
         <section class="feature-section">
-            <div class="feature-section__title">
+            <header class="feature-section__title">
                 <div class="feature-section__header">
                     <img src="./img/icon-box.png" alt="Pipeline Box Icon"/>
                     <h2>Build pipelines that fit your team</h2>
                 </div>
                 <p>Tweak anything and everything to ensure NexFlow
                 fits your business, not the other way around.</p>
-            </div>
+            </header>
             <div class="feature-section__card">
                 <div class="feature-section__features">
                     <div class="feature-section__feature">
                         <img src="./img/build-icon.png" alt="Build" />
-                        <h4>Build</h4>
+                        <h3>Build</h3>
                         <p>Create your dream CRM with powerful, flexible templates for every use case.</p>
                     </div>
                     <div class="feature-section__feature">
                         <img src="./img/frame-icon.png" alt="Refine" />
-                        <h4>Refine</h4>
+                        <h3>Refine</h3>
                         <p>Use NexFlow's intuitive UI and ultra customizable blocks to craft your ideal workflows.</p>
                     </div>
                     <div class="feature-section__feature">
                         <img src="./img/work-icon.png" alt="Work" />
-                        <h4>Work</h4>
+                        <h3>Work</h3>
                         <p>Help your business scale with enriched data, custom attributes, and integrations.</p>
                     </div>
                     <div class="feature-section__feature">
                         <img src="./img/report-icon.png" alt="Report" />
-                        <h4>Report</h4>
+                        <h3>Report</h3>
                         <p>Analyze, track and share reports built on real-time data from across your workspace.</p>
                     </div>
                 </div>
@@ -111,12 +119,12 @@
                     <a href="#">Read the full story</a>
                 </div>
                 <div class="feature-section__testimonial-content">
-                    <p>"My team loves NexFlow's reporting system because it's so dynamic. We can splice our data in so many different ways and combinations."</p>
+                    <blockquote>"My team loves NexFlow's reporting system because it's so dynamic. We can splice our data in so many different ways and combinations."</blockquote>
                     <div class="feature-section__testimonial-author">
                         <img src="./img/avatar.png" alt="DeGrasse Schrader" />
                         <div>
-                            <p>DeGrasse Schrader</p>
-                            <p>Chief of Staff, Pallet</p>
+                            <p class="feature-section__testimonial-author-name">DeGrasse Schrader</p>
+                            <p class="feature-section__testimonial-author-job">Chief of Staff, Pallet</p>
                         </div>
                     </div>
                 </div>

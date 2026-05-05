@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 52px;
+    gap: 28px;
 
     &__item {
         color:hsl(228, 5%, 12%);
@@ -12,5 +12,28 @@
         line-height: 24px;
         letter-spacing: -0.2px;
         text-decoration: none;
+
+        --careers {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 8px 16px 8px 15px;
+            border-radius: 12px;
+        }
     }
+}
+
+.nav__counter {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    background-color: #383e47;
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: var(--font-medium);
+    color: #ffffff;
+    line-height: 1;
+    flex-shrink: 0;
 }

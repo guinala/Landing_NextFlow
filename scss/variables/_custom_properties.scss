@@ -9,11 +9,11 @@
     --color-accent-light:       hsl(202, 59%, 60%);
     --color-accent-dark:        hsl(204, 72%, 36%);
     --color-text-primary:       hsl(240, 28%, 14%);
-    --color-text-secondary:     hsl(240, 10%, 32%);
-    --color-text-on-primary:    hsl(0, 0%, 100%);
+    --color-text-secondary:     hsl(210, 11%, 22%);
+    --color-text-on-primary:    hsl(210, 6%, 94%);
     --color-text-on-accent:     hsl(0, 0%, 100%);
     --color-neutral:            hsl(210, 17%, 96%);
-    --color-neutral-200:        hsl(216, 15%, 87%);
+    --color-neutral-200:        hsl(214, 16%, 83%);
     --color-neutral-300:        hsl(214, 11%, 72%);
     --color-success:            hsl(145, 63%, 42%);
     --color-warning:            hsl(37, 90%, 51%);
@@ -33,7 +33,7 @@
 
     // Border radius
     --radius-sm:   4px;
-    --radius-md:   8px;
+    --radius-md:   12px;
     --radius-lg:   16px;
     --radius-full: 9999px;
 
@@ -41,7 +41,7 @@
     --font-family: 'Inter', sans-serif;
 
     // Typography — font sizes
-    --text-h1:      64px;
+    --text-h1:      90px;
     --text-h2:      48px;
     --text-h3:      36px;
     --text-h4:      28px;

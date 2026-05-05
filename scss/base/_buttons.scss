@@ -3,13 +3,12 @@
     cursor: pointer;
     align-items: center;
     justify-content: center;
-    padding: 8px 16px;
+    padding: 8px 16.52px 8px 17px;
     border-radius: var(--radius-md);
     font-size: var(--text-body);
     font-weight: var(--font-medium);
     line-height: 24px;
     letter-spacing: -0.2px;
-    transition: opacity 0.15s ease;
 
     &:hover {
         opacity: 0.85;
@@ -18,11 +17,16 @@
     &--primary {
         background-color: var(--color-text-primary);
         color: var(--color-text-on-primary);
+        box-shadow: 0 1px 0 rgba(27, 31, 35, 0.2);
     }
 
     &--secondary {
         background-color: var(--color-background);
         color: var(--color-text-primary);
         border: 1px solid var(--color-neutral-200);
+    }
+
+    &--lg {
+       padding: 13px 16.23px 13px 17px;
     }
 }

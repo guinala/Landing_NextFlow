@@ -1,23 +1,28 @@
 @use "../lib" as *;
 
 .product-logos {
-    margin-top: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: var(--space-4xl);
-    @include center-content(2200px);
+    padding-top: 54px;
+    padding-left: 100px;
+    padding-right: 100px;
 
     &__grid {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
+        gap: 50px;         
+        width: 90%;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;  
         align-items: center;
-        gap: var(--space-2xl);
 
         img {
-            width: 300px;
-            height: 75px;
+            width: auto;
+            height: 40px;
             object-fit: contain;
         }
     }
