@@ -31,7 +31,7 @@
             left: 27px;
             top: 56px;
             width: 2px;
-            height: 2000px;
+            height: 1500px;
             background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.15), transparent);
         }
 
@@ -94,73 +94,79 @@
     }
 
     &__testimonial {
-        display: grid;
-        grid-template-columns: 472px 1fr;
+        display: flex;
         align-items: stretch;
-        max-width: 1155px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 96px 0 120px 0;
+        align-self: stretch;
+        padding: 96px 350px 120px 350px;
+        gap: 220px;
 
         &-brand {
-            height: 100%;
-            padding-left: 118px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: flex-start;
 
-            img { 
+            img {
                 height: 44px;
                 width: auto;
                 display: block;
                 object-fit: contain;
             }
 
-            a {
-                font-size: var(--text-body);    
+            > a {
+                font-size: var(--text-body-sm);
                 font-weight: var(--font-semibold);
-                color: rgba(85, 94, 103, 1);
+                line-height: 1.5;
+                letter-spacing: -0.2px;
+                color: var(--color-text-secondary);
                 text-decoration: none;
             }
         }
 
         &-content {
-            height: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;  
-            max-width: 550px;
-            gap: var(--space-4xl);
-        }
+            justify-content: space-between;
+            gap: 45px;
+            flex: 1;
 
-        &-content > blockquote {
-            font-size: var(--text-h4);
-            color: var(--color-text-secondary);
-            line-height: 1.15;
-            font-weight: var(--font-medium);
+            blockquote {
+                font-size: var(--text-h4);
+                color: var(--color-text-secondary);
+                font-weight: var(--font-semibold);
+                line-height: 1.2;
+                letter-spacing: -0.5px;
+                max-width: 520px;
+                margin: 0;
+            }
         }
 
         &-author {
             display: flex;
             align-items: center;
             gap: 18px;
-            margin-left: 40px;
 
             img {
                 width: 60px;
                 height: 60px;
-                border-radius: 12px;   
+                border-radius: 25%;
                 object-fit: cover;
                 flex-shrink: 0;
             }
 
-            p { font-size: var(--text-body-sm); }
-
             &-name {
                 color: var(--color-text-primary);
-                font-weight: var(--font-medium);
+                font-weight: var(--font-semibold);
+                letter-spacing: -0.2px;
             }
+
+            &-job {
+                color: var(--color-text-secondary);
+                font-weight: var(--font-medium);
+                letter-spacing: -0.2px;
+            }
+
+            p { font-size: var(--text-body-sm); line-height: 1.5; }
         }
     }
 
