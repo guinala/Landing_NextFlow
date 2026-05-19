@@ -171,3 +171,123 @@
     }
 
 }
+
+// ── Real-time bento grid ─────────────────────────────────────────────────────
+$feature-section-bento-shadow:
+    0 0 0 0.5px #e4e5e9,
+    0 0 0 1px rgba(228, 229, 233, 0.6),
+    0 0 0 3.5px #f9f9fb,
+    0 0 0 4px #f3f4f7;
+
+.feature-section__bento {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    margin-left: 50px;
+
+    // ── Tarjeta superior (full-width) ────────────────────────────────────────
+    &-top {
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: $feature-section-bento-shadow;
+        overflow: hidden;
+        display: flex;
+        align-items: flex-start;   // texto arriba, no pegado abajo
+        padding: 40px 0 0 40px;
+        justify-content: space-between;
+        gap: 124px;
+    }
+
+    &-top-content {
+        flex: 0 0 280px;           // ancho fijo para el texto
+        padding-bottom: 40px;
+        display: flex;
+        max-width: 380px;
+        padding: 0 23px 386.81px 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.19px;
+        flex: 1 0 0;
+    }
+
+    &-top-image {
+        flex: 0 0 52%;             // imagen más estrecha (no flex:1 al 100%)
+        overflow: hidden;
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    // ── Texto compartido ─────────────────────────────────────────────────────
+    &-label {
+        font-size: var(--text-body-lg);
+        line-height: 1.4;
+        letter-spacing: -0.2px;
+        margin: 0;
+        max-width: 500px;
+
+        strong {
+            font-weight: var(--font-semibold);
+            color: #31373d;
+        }
+
+        span {
+            font-weight: var(--font-medium);
+            color: #555e67;
+        }
+    }
+
+    // ── Fila inferior: dos tarjetas lado a lado ──────────────────────────────
+    &-row {
+        display: flex;
+        gap: var(--space-lg);
+    }
+
+    &-card {
+        flex: 1;
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: $feature-section-bento-shadow;
+        overflow: hidden;
+        height: 540px;
+        display: flex;
+        flex-direction: column;
+
+        .feature-section__bento-label {
+            padding: 40px 40px 0 40px;
+            flex-shrink: 0;
+        }
+    }
+
+    // ── Imagen dentro de las tarjetas inferiores ─────────────────────────────
+    &-card-image {
+        flex: 1;
+        overflow: hidden;
+        display: flex;
+        align-items: flex-end;     // imagen anclada al fondo
+        margin-top: 24px;
+        margin-left: 24px; 
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &-card:first-child .feature-section__bento-label {
+        max-width: 420px;
+    }
+
+    &-card:last-child .feature-section__bento-label {
+        max-width: 320px;
+    }
+
+    &-card:first-child &-card-image {
+        align-items: flex-start;   // imagen desde arriba, sin recorte superior
+        margin-left: 40px;         // más margen izquierdo que la tercera
+    }
+}
