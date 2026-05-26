@@ -198,7 +198,6 @@
                 <p>The first truly multiplayer CRM. After all, the best work doesn't come from silos.</p>
             </header>
             <div class="feature-section__grid">
-                <!-- Fila 1: card ancha izquierda + card estrecha derecha (560px alto) -->
                 <div class="feature-section__grid-row">
                     <div class="feature-section__grid-card feature-section__grid-card--wide feature-section__grid-card--tall">
                         <p class="feature-section__grid-label">
@@ -219,7 +218,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Fila 2: card estrecha izquierda + card ancha derecha (540px alto) -->
                 <div class="feature-section__grid-row">
                     <div class="feature-section__grid-card feature-section__grid-card--narrow">
                         <p class="feature-section__grid-label">
@@ -268,9 +266,435 @@
                 </div>
             </div>
             <div class="enterprise-section__logos">
-                <img src="./img/readyLogos.png" alt="GDPR Ready, CCPA Ready, ISO 9001, ISO 27001" />
+                <div class="enterprise-section__badges-group enterprise-section__badges-group--sm">
+                    <img src="./img/gdpr-ready-badge.png" alt="GDPR Ready" style="height: 52px;" />
+                    <img src="./img/ccpa-ready-badge.png" alt="CCPA Ready" style="height: 52px;" />
+                </div>
+                <div class="enterprise-section__badges-group enterprise-section__badges-group--lg">
+                    <img src="./img/iso-9001-badge.png" alt="ISO 9001" style="height: 92px;" />
+                    <img src="./img/iso-27001-badge.png" alt="ISO 27001" style="height: 92px;" />
+                </div>
+            </div>
+        </section>
+        <section class="dashboard-section">
+            <div class="dashboard-section__header">
+                <div class="dashboard-section__title">
+                    <h2>Powered by <strong>Particle.</strong></h2>
+                    <p>And it's all powered by Particle...</p>
+                    <button class="btn btn--secondary">Start for free</button>  
+                </div>
+                <div class="dashboard-section__controls">
+                    <div class="dashboard-section__nav">
+                        <button class="dashboard-section__nav-btn">‹</button>
+                        <button class="dashboard-section__nav-btn dashboard-section__nav-btn--active">›</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-section__preview">
+                <div class="db-col-left">
+                    <div class="db-card db-integration">
+                        <div class="db-integration__icon">
+                            <img src="./img/slack-icon.png" alt="Slack" />
+                        </div>
+                        <div class="db-integration__body">
+                            <div class="db-integration__name">
+                                Slack
+                                <span class="db-integration__badge">Enabled</span>
+                            </div>
+                            <p class="db-integration__desc">Connect your lists to Slack channels to be alerted when someone makes a change.</p>
+                        </div>
+                    </div>
+
+                    <div class="db-card db-activity">
+                        <p class="db-activity__title">This week</p>
+                        <ul class="db-activity__list">
+                            <li class="db-activity__item">
+                                <strong>James Wilson</strong>&nbsp;was added to&nbsp;<a href="#">Finding my first customers</a>&nbsp;<time>4 days ago</time>
+                            </li>
+                            <li class="db-activity__item">
+                                <strong>Stealth startup</strong>&nbsp;was created by&nbsp;<strong>Jennifer Turner</strong>&nbsp;<time>5 days ago</time>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="db-card db-chart-card">
+                    <div class="db-chart-card__top">
+                        <div>
+                            <p class="db-chart-card__title">Sales Pipeline Overview</p>
+                            <p class="db-chart-card__subtitle">Insights into this month's sales</p>
+                        </div>
+                        <button class="db-chart-card__add-btn">Add chart</button>
+                    </div>
+
+                    <div class="chart">
+                        <div class="chart__header">
+                            <span>Deals by month</span>
+                            <span class="chart__header__badge">Companies</span>
+                        </div>
+                        <ol class="chart__scale">
+                            <li class="chart__scale__line"></li>
+                            <li class="chart__scale__line"></li>
+                            <li class="chart__scale__line"></li>
+                            <li class="chart__scale__line"></li>
+                            <li class="chart__scale__line"></li>
+                        </ol>
+                        <div class="chart__bars">
+                            <div class="chart__bars__container">
+                                <div class="chart__bars__bar" style="--bar-height: 25%"></div>  
+                                <div class="chart__bars__bar" style="--bar-height: 60%"></div>   
+                                <div class="chart__bars__bar" style="--bar-height: 50%"></div>   
+                                <div class="chart__bars__bar" style="--bar-height: 72%"></div>  
+                            </div>
+                            <div class="chart__bars__legend">
+                                <span>January</span>
+                                <span>February</span>
+                                <span>March</span>
+                                <span>April</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="db-col-right">
+                    <div class="db-card db-records">
+                        <div class="db-records__header">
+                            <span>Records</span>
+                            <span>Stage</span>
+                            <span>Next Meeting</span>
+                        </div>
+                        <div class="db-records__row">
+                            <span class="db-records__name">Modulr</span>
+                            <span class="db-records__stage">In Trial</span>
+                            <span class="db-records__tag db-records__tag--tomorrow">Tomorrow</span>
+                        </div>
+                        <div class="db-records__row">
+                            <span class="db-records__name">Gong</span>
+                            <span class="db-records__stage db-records__stage--demo">Demo seen</span>
+                            <span class="db-records__tag db-records__tag--next-week">Next week</span>
+                        </div>
+                    </div>
+
+                    <div class="db-card db-lists">
+                        <div class="db-lists__header">
+                            <span>Lists</span>
+                            <button>+</button>
+                        </div>
+                        <div class="db-lists__item">
+                            <span class="db-lists__name">🚀 Sales Pipeline</span>
+                        </div>
+                        <div class="db-lists__item db-lists__item--active">
+                            <span class="db-lists__name">🚀 Beta outreach</span>
+                            <span class="db-lists__dots">···</span>
+                        </div>
+                        <div class="db-lists__item">
+                            <span class="db-lists__name">👌 Customer Success</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="dashboard-section__scale">
+                <p>Built for teams at any scale.</p>
+                <div class="dashboard-section__scale-track">
+                    <input type="range" min="3" max="150" value="50" />
+                    <div class="dashboard-section__scale-labels">
+                        <span>03</span>
+                        <span>50</span>
+                        <span>100</span>
+                        <span>150+</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="more-section">
+            <div class="more-section__header">
+                <h2>And so <strong>much more...</strong></h2>
+                <p>Your customers are always connected.<br>Why should your CRM be any different?</p>
+            </div>
+
+            <div class="more-section__grid">
+
+                <div class="db-card more-card">
+                    <div class="more-card__illustration">
+                        <img src="./img/feature-quick-actions.png" alt="Quick actions" />
+                    </div>
+                    <div class="more-card__body">
+                        <h3 class="more-card__title">Quick actions</h3>
+                        <p class="more-card__desc">Streamline your workflow with customizable shortcuts.</p>
+                    </div>
+                </div>
+
+                <div class="db-card more-card">
+                    <div class="more-card__illustration">
+                        <img src="./img/feature-enrichment.png" alt="Automatic enrichment" />
+                    </div>
+                    <div class="more-card__body">
+                        <h3 class="more-card__title">Automatic enrichment</h3>
+                        <p class="more-card__desc">Update your contacts with the latest information on autopilot.</p>
+                    </div>
+                </div>
+
+                <div class="db-card more-card">
+                    <div class="more-card__illustration">
+                        <img src="./img/feature-chrome.png" alt="Chrome extension" />
+                    </div>
+                    <div class="more-card__body">
+                        <h3 class="more-card__title">Chrome extension</h3>
+                        <p class="more-card__desc">Stay lean with NexFlow's lightweight browser extension.</p>
+                    </div>
+                </div>
+
+                <div class="db-card more-card">
+                    <div class="more-card__illustration">
+                        <img src="./img/feature-contact-analysis.png" alt="Contact analysis" />
+                    </div>
+                    <div class="more-card__body">
+                        <h3 class="more-card__title">Contact analysis</h3>
+                        <p class="more-card__desc">Get deeper insights into your contacts at a single glance.</p>
+                    </div>
+                </div>
+
+                <div class="db-card more-card">
+                    <div class="more-card__illustration">
+                        <img src="./img/feature-filters.png" alt="Filters" />
+                    </div>
+                    <div class="more-card__body">
+                        <h3 class="more-card__title">Filters</h3>
+                        <p class="more-card__desc">Drill down and filter your contacts with power, precision and speed.</p>
+                    </div>
+                </div>
+
+                <div class="db-card more-card">
+                    <div class="more-card__illustration">
+                        <img src="./img/feature-sorting.png" alt="Tiered sorting" />
+                    </div>
+                    <div class="more-card__body">
+                        <h3 class="more-card__title">Tiered sorting</h3>
+                        <p class="more-card__desc">Quickly organize your contacts in any way that comes to mind.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="testimonials-section">
+            <div class="testimonials-section__header">
+                <h2>Loved by <strong>Builders.</strong></h2>
+                <p>NexFlow is the customer relationship management tool<br>for everyone who values collaboration.</p>
+                <button class="btn btn--secondary">More customer stories</button>
+            </div>
+
+            <div class="testimonials-section__columns">
+                <div class="testimonials-col">
+                    <div class="db-card tweet-card">
+                        <div class="tweet-card__header">
+                            <div class="tweet-card__author">
+                                <img src="./img/avatar-sebastiaan.png" alt="Sebastiaan Debrouwere" class="tweet-card__avatar" />
+                                <div class="tweet-card__meta">
+                                    <span class="tweet-card__name">Sebastiaan Debrouwere</span>
+                                    <span class="tweet-card__handle">@iamsebdeb</span>
+                                </div>
+                            </div>
+                            <svg class="tweet-card__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </div>
+                        <p class="tweet-card__text">We use @nexflow on a daily basis for several internal processes, and I cannot rave enough about them. Incredible flexibility and features combined with super intuitive UI</p>
+                        <time class="tweet-card__time">10:01 PM · Apr 7, 2022</time>
+                    </div>
+
+                    <div class="db-card tweet-card">
+                        <div class="tweet-card__header">
+                            <div class="tweet-card__author">
+                                <img src="./img/avatar-krishna.png" alt="Krishna" class="tweet-card__avatar" />
+                                <div class="tweet-card__meta">
+                                    <span class="tweet-card__name">Krishna</span>
+                                    <span class="tweet-card__handle">@rikris</span>
+                                </div>
+                            </div>
+                            <svg class="tweet-card__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </div>
+                        <p class="tweet-card__text">Holy shit @nexflow is beautiful 😍 I've run my CRM on Notion to date. Hubspot & Salesforce too clunky. Sleek and simple, just what I need</p>
+                        <time class="tweet-card__time">1:03 PM · Mar 3, 2023</time>
+                    </div>
+                </div>
+
+                <div class="testimonials-col">
+                    <div class="db-card tweet-card">
+                        <div class="tweet-card__header">
+                            <div class="tweet-card__author">
+                                <img src="./img/avatar-alon.png" alt="Alon" class="tweet-card__avatar" />
+                                <div class="tweet-card__meta">
+                                    <span class="tweet-card__name">Alon</span>
+                                    <span class="tweet-card__handle">@alon</span>
+                                </div>
+                            </div>
+                            <svg class="tweet-card__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </div>
+                        <p class="tweet-card__text">As an early stage startup I'm really loving using @nexflow - great balance of flexibility and prescriptiveness</p>
+                        <time class="tweet-card__time">6:57 PM · Dec 1, 2022</time>
+                    </div>
+
+                    <div class="db-card tweet-card">
+                        <div class="tweet-card__header">
+                            <div class="tweet-card__author">
+                                <img src="./img/avatar-jono.png" alt="Jono Bacon" class="tweet-card__avatar" />
+                                <div class="tweet-card__meta">
+                                    <span class="tweet-card__name">Jono Bacon</span>
+                                    <span class="tweet-card__handle">@jonobacon</span>
+                                </div>
+                            </div>
+                            <svg class="tweet-card__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </div>
+                        <p class="tweet-card__text">Let's be honest, most CRMs suck. Overcomplicated, expensive, and you have to bend to their will...not the other way around. I am a huge fan of @nexflow - their product is rock-solid, customer support is AAA, and it is *very* flexible and simple.</p>
+                        <time class="tweet-card__time">4:05 PM · Jan 9, 2023</time>
+                    </div>
+                </div>
+
+                <div class="testimonials-col">
+                    <div class="db-card tweet-card">
+                        <div class="tweet-card__header">
+                            <div class="tweet-card__author">
+                                <img src="./img/avatar-dimitry.png" alt="Dimitry Gershenson" class="tweet-card__avatar" />
+                                <div class="tweet-card__meta">
+                                    <span class="tweet-card__name">Dimitry Gershenson</span>
+                                    <span class="tweet-card__handle">@d_gershenson</span>
+                                </div>
+                            </div>
+                            <svg class="tweet-card__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </div>
+                        <p class="tweet-card__text">We use our CRM @nexflow for sales, fundraising, and recruiting. It's awesome</p>
+                        <time class="tweet-card__time">1:32 PM · Jan 4, 2023</time>
+                    </div>
+
+                    <div class="db-card tweet-card">
+                        <div class="tweet-card__header">
+                            <div class="tweet-card__author">
+                                <img src="./img/avatar-sri.png" alt="Sri" class="tweet-card__avatar" />
+                                <div class="tweet-card__meta">
+                                    <span class="tweet-card__name">Sri</span>
+                                    <span class="tweet-card__handle">@thereafsril</span>
+                                </div>
+                            </div>
+                            <svg class="tweet-card__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </div>
+                        <p class="tweet-card__text">I've been using @nexflow to track applicants, manage my deal pipeline and manage the associated notes/tasks. The use-cases are unlimited; it truly feels like the Notion of CRM.</p>
+                        <time class="tweet-card__time">10:17 PM · Jan 3, 2023</time>
+                    </div>
+
+                    <div class="db-card tweet-card">
+                        <div class="tweet-card__header">
+                            <div class="tweet-card__author">
+                                <img src="./img/avatar-fabian.png" alt="Fabian" class="tweet-card__avatar" />
+
+                                <div class="tweet-card__meta">
+                                    <span class="tweet-card__name">Fabian</span>
+                                    <span class="tweet-card__handle">@fabianlimbach_</span>
+                                </div>
+                            </div>
+                            <svg class="tweet-card__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </div>
+                        <p class="tweet-card__text">Switched from Notion to @nexflow last week and I don't think I'm ever going back. The speed alone is worth it.</p>
+                        <time class="tweet-card__time">9:44 AM · Feb 12, 2023</time>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonials-section__fade">
+                <img src="./img/testimonials-fade.png" alt="" aria-hidden="true" />
+            </div>
+        </section>
+        <section class="cta-section">
+            <div class="cta-section__content">
+                <h2>Ready to automate your<br>team's dream workflow?</h2>
+                <div class="cta-section__actions">
+                    <button class="btn btn--cta-primary">Start for free</button>
+                    <button class="btn btn--cta-secondary">Talk to sales</button>
+                </div>
+            </div>
+            <div class="cta-section__illustration">
+                <img src="./img/cta-illustration.png" alt="" aria-hidden="true" />
             </div>
         </section>
     </main>
+    <footer class="site-footer">
+        <div class="site-footer__top">
+
+            <a href="#" class="site-footer__logo">
+                <svg width="22" height="22" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <rect width="32" height="32" rx="8" fill="rgba(255,255,255,0.12)"/>
+                    <path d="M10 22L16 10L22 22" stroke="rgba(255,255,255,0.85)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 18.5H20" stroke="rgba(255,255,255,0.85)" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <span>Attio</span>
+            </a>
+
+            <div class="site-footer__top-row">
+                <nav class="site-footer__nav">
+                    <div class="footer-col">
+                        <p class="footer-col__heading">Product</p>
+                        <ul class="footer-col__list">
+                            <li><a href="#">Changelog</a></li>
+                            <li><a href="#">Customer stories</a></li>
+                            <li><a href="#">Security</a></li>
+                            <li><a href="#" class="footer-col__link--external">Chrome extension</a></li>
+                            <li><a href="#" class="footer-col__link--external">iOS app</a></li>
+                            <li><a href="#" class="footer-col__link--external">Android app</a></li>
+                            <li><a href="#" class="footer-col__link--external">Zapier</a></li>
+                            <li><a href="#" class="footer-col__link--external">Integromat</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <p class="footer-col__heading">Company</p>
+                        <ul class="footer-col__list">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Docs</a></li>
+                            <li><a href="#">Startup program</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <p class="footer-col__heading">NexFlow for</p>
+                        <ul class="footer-col__list">
+                            <li><a href="#">Startups</a></li>
+                            <li><a href="#">Deal flow</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <p class="footer-col__heading">Support</p>
+                        <ul class="footer-col__list">
+                            <li><a href="#">Help center</a></li>
+                            <li><a href="#">Talk to support</a></li>
+                            <li><a href="#" class="footer-col__link--external">API docs</a></li>
+                            <li><a href="#" class="footer-col__link--external">System status</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="site-footer__cta">
+                    <p class="site-footer__cta-label">Ready to build?</p>
+                    <button class="btn btn--footer-primary">Start for free</button>
+                    <button class="btn btn--footer-secondary">Talk to sales</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-footer__bottom">
+            <div class="site-footer__social">
+                <a href="#" aria-label="X (Twitter)" class="site-footer__social-link">
+                    <img src="./img/twiiter.png" alt="Logo Twitter" />
+                </a>
+                <a href="#" aria-label="Threads" class="site-footer__social-link">
+                    <img src="./img/dribble.png" alt="Dribble Logo" />
+                </a>
+                <a href="#" aria-label="LinkedIn" class="site-footer__social-link">
+                    <img src="./img/linkdin.png" alt="Logo LinkedIn" />
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
