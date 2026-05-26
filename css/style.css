@@ -1273,7 +1273,7 @@ p {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding: 0 4px;
+  padding: 0 15px;
 }
 .db-chart-card .chart__bars__bar {
   background: #4f8ef7;
