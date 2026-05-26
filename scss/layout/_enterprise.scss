@@ -1,0 +1,49 @@
+.enterprise-section {
+    display: flex;
+    align-items: center;
+    padding: 0 var(--space-4xl);
+    min-height: 542px;
+
+    &__content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-lg);
+        padding-left: 50px;
+        max-width: 560px;
+
+        h2 {
+            font-size: var(--text-h2);
+            font-weight: var(--font-bold);
+            letter-spacing: -1px;
+            line-height: 1.1;
+            margin: 0;
+            color: var(--color-text-primary);
+        }
+
+        p {
+            font-size: var(--text-body);
+            color: var(--color-text-secondary);
+            line-height: 1.5;
+            max-width: 360px;
+            margin: 0;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        gap: var(--space-sm);
+    }
+
+    &__logos {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
